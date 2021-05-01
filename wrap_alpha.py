@@ -24,7 +24,7 @@ for root, dirs, files in os.walk('.'):
         src_clause = '\n    android:src="@drawable/%s"' % (src)
 
         alpha = src.endswith("_alpha")
-        if alpha:
+          if alpha:
             src = src[0:-6]
             alpha_clause = '\n    android:tint="?android:attr/colorAccent"'
         else:
